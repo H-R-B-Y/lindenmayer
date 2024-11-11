@@ -1,0 +1,8 @@
+{
+	"cmake.ignoreCMakeListsMissing": true,
+	"files.associations": {
+		"lindenmayer.h": "c",
+		"menu_lib.h": "c",
+		"stdio.h": "c"
+	}
+}
