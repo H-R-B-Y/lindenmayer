@@ -73,13 +73,13 @@ int main(int argc, char **argv)
 		.c_val.stat = 0x00FF,
 		.param = 0};
 
-	append_c_rule(master, 'p', "ppfp");
-	append_c_rule(master, 'f', "pap");
-	append_c_rule(master, 'a', "fap");
-	append_d_rule(master, 'p', default_draw, (union u_param){.mag = 30});
-	append_d_rule(master, 'f', default_rotate, (union u_param){.euler = -48});
-	append_d_rule(master, 'a', default_rotate, (union u_param){.euler = 24});
-	master->model = prop(master, "p", 8);
+	append_c_rule(master, 'A', "B-A-B");
+	append_c_rule(master, 'B', "A+B+A");
+	append_d_rule(master, 'A', default_draw, (union u_param){.mag = 10});
+	append_d_rule(master, 'B', default_draw, (union u_param){.mag = 10});
+	append_d_rule(master, '-', default_rotate, (union u_param){.euler = 60});
+	append_d_rule(master, '+', default_rotate, (union u_param){.euler = -60});
+	master->model = prop(master, "A", 10);
 	printf("test: %s", master->model);
 	fflush(stdout);
 
