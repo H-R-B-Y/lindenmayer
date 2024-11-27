@@ -17,7 +17,8 @@ Generated at depth 10.
 ## ToDo
 - Allow for model rotation.
 - Re-load model at different depth.
-- Re-Do the Colours.
+- Re-Do the Colours and line width adjustment.
+- Norm.
 - Add usage instructions lol.
 - Add a way to change the rule from within the simulation.
 - Documentation.
